@@ -11,7 +11,6 @@ icon = pystray.Icon('virt dsktp no indicator',icon=Image.open(images_directory +
 
 def bgThread():
     global icon
-    global max_virt_dsktps
 
     while True:
         current_desktop = pyvda.VirtualDesktop.current().number
